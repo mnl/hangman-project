@@ -37,7 +37,7 @@ Matchpoäng visas efter varje avklarat ord och totalpoängen visas när spelet a
 Klassen `Player` hanterar spelarnas namn och poäng, varje instans är en spelar och det finns ingen gräns för hur många som kan spela.
 
 `TerminalTyper` hanterar all utskrift på skärmen och tar även input. Detta för att lätt kunna byta ut hela denna klass om ett annat interface utvecklas.
-`TerminalTyper` är inte så avancerad utan bygger på att terminalen rapporterar sin storlek i rader och kolumner. `Klassen har `update`- och `clear`-metoder som ritar upp de rader som behöver vara på skärmen. `shutil` behövs för att hantera detta.
+`TerminalTyper` är inte så avancerad utan bygger på att terminalen rapporterar sin storlek i rader och kolumner. Klassen har `update`- och `clear`-metoder som ritar upp de rader som behöver vara på skärmen. `shutil` behövs för att hantera detta.
 `textblock` och `hangman` fungerar på samma sätt och måste hålla reda på antalet tecken som skrivs för att hålla innehållet centrerat.
 
 I funktionen `newGame()` finns den mesta logiken för spelet och varje spel om ett ord stannar i while-loopen där inne.
